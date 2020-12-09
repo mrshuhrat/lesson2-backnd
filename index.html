@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-lesson | Shuhratbek</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+  
+  
+  <div class="container">
+    <div class="row">
+
+      <div class="col-4 border-right vh-100">
+        <form action="https::echo.htmlacademy.ru" method="POST">
+          <select class="form-control mt-4 js-name-select" name="name" id="name_select"></select>
+        </form>
+      </div>
+
+      <div class="col-8 pt-4">
+        <div class="border p-2 d-flex justify-content-around font-weight-bold">
+          <span>Date</span>
+          <span>Visit</span>
+          <span>Score</span>
+        </div>
+        <ul class="list-unstyled mt-3 js-results-wrapper"></ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Template -->
+  <template id="new_li" >
+    <li class="border m-1 p-2 d-flex justify-content-around text-white font-weight-bold js-result-item">
+      <span class="ml-3 mr-3 js-date" ></span>
+      <span class="ml-3 mr-3 js-visit"></span>
+      <span class="ml-3 mr-3 js-score"></span>
+    </li>
+  </template>
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
